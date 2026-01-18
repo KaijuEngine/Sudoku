@@ -2,9 +2,4 @@
 
 package main
 
-import (	_ "kaiju/engine_entity_data/engine_entity_data_camera"
-	_ "kaiju/engine_entity_data/engine_entity_data_light"
-	_ "kaiju/engine_entity_data/engine_entity_data_particles"
-	_ "kaiju/engine_entity_data/engine_entity_data_physics"
-	_ "kaiju/engine_entity_data/engine_entity_data_tween_transform"
-)
+import ()

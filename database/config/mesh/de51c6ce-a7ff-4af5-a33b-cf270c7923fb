@@ -1,1 +1,1 @@
-{"Tags":["update01","hotfix01"],"Name":"Tile","Type":"mesh","SrcPath":"artwork/Tile.gltf","SrcName":"Tile-Tile","LinkedId":"de51c6ce-a7ff-4af5-a33b-cf270c7923fb"}
+{"Tags":["update01","hotfix01"],"Name":"Tile","Type":"Mesh","SrcPath":"artwork/Tile.gltf","SrcName":"Tile-Tile","LinkedId":"de51c6ce-a7ff-4af5-a33b-cf270c7923fb"}

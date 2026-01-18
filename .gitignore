@@ -1,12 +1,11 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
 # Binaries for programs and plugins
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
+*__debug*
+*.exe*
 
 # Test binary, built with `go test -c`
 *.test
@@ -17,13 +16,6 @@ coverage.*
 *.coverprofile
 profile.cov
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
 # env file
 .env
 
@@ -31,8 +23,10 @@ go.work.sum
 # .idea/
 # .vscode/
 
-# Kaiju engine code (feel free to comment this out)
-kaiju/
+# Trace files
+heap.prof
+trace.out
 
-# This is temp, may need to commit raw artwork folder at some point
-artwork/
+# Kaiju engine code
+#   Feel free to comment this out if you modify the engine code in your project
+kaiju/

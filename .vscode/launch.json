@@ -1,0 +1,39 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Game",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/src",
+			"cwd": "${workspaceFolder}",
+			"buildFlags": "-tags=debug",
+			"env": {
+				"CGO_ENABLED": "1",
+			}
+		}, {
+			"name": "Trace Game",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/src",
+			"cwd": "${workspaceFolder}",
+			"args": ["-trace"],
+			"buildFlags": "-tags=debug",
+			"env": {
+				"CGO_ENABLED": "1",
+			}
+		}, {
+			"name": "Launch Game",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/src",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"CGO_ENABLED": "1",
+			}
+		}
+	]
+}

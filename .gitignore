@@ -30,3 +30,6 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Kaiju engine code (feel free to comment this out)
+kaiju/

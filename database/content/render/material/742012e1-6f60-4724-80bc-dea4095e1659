@@ -1,0 +1,1 @@
+{"Shader":"unlit_transparent.shader","RenderPass":"transparent.renderpass","ShaderPipeline":"basic_transparent.shaderpipeline","Textures":[{"Texture":"15a4e9c3-ae15-45e8-b8fc-4b04a12f28b5","Filter":"Linear"}],"PrepassMaterial":"","IsLit":false,"ReceivesShadows":false,"CastsShadows":false}

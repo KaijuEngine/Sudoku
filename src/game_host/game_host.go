@@ -7,10 +7,12 @@ import (
 
 type GameHost struct {
 	UiMan ui.Manager
+	Game  SudokuGame
 }
 
 func NewGameHost(host *engine.Host) *GameHost {
 	g := &GameHost{}
 	g.UiMan.Init(host)
+	g.Game.Initialize(host)
 	return g
 }

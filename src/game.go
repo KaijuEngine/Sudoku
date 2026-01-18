@@ -8,7 +8,7 @@ import (
 	"kaiju/engine"
 	"kaiju/engine/assets"
 	"kaiju/klib"
-	"kaiju/stages"
+	"kaiju/engine/stages"
 	"log/slog"
 	"os"
 	"path/filepath"

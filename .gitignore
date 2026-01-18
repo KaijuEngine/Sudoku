@@ -33,3 +33,6 @@ go.work.sum
 
 # Kaiju engine code (feel free to comment this out)
 kaiju/
+
+# This is temp, may need to commit raw artwork folder at some point
+artwork/

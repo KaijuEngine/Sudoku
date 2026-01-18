@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			button {
+				position: absolute;
+				left: 50%;
+				width: 25%;
+				transform: translateX(-50%);
+				color: white;
+				font-size: 4em;
+				padding: 5px 10px 5px 10px;
+				background-color: #581E0A;
+				background-image: url("d2176f4a-a224-4ae4-afd9-d345cc828535");
+				background-size: revert;
+				background-position: revert;
+			}
+			button:hover {
+				background-color: #76280D;
+				background-image: url("8b886be8-870b-41f9-87ff-beb44ae8fe21");
+				background-size: revert;
+				background-position: revert;
+			}
+			button:active {
+				padding: 10px 10px 0px 10px;
+				background-image: url("72149711-0d8f-4628-a9e5-7ad06826c49f");
+				background-size: revert;
+				background-position: revert;
+			}
+			.playBtn {
+				top: 50%;
+			}
+			.settingsBtn {
+				top: calc(50% + 7em);
+			}
+			.exitBtn {
+				top: calc(50% + 14em);
+			}
+		</style>
+	</head>
+	<body>
+		<button class="playBtn" onclick="clickPlay">Play</button>
+		<button class="settingsBtn" onclick="clickSettings">Settings</button>
+		<button class="exitBtn" onclick="clickExit">Exit</button>
+	</body>
+</html>

@@ -78,7 +78,7 @@ func (Game) Launch(host *engine.Host) {
 			return
 		}
 	}
-	host.SetGame(game_host.NewGameHost())
+	host.SetGame(game_host.NewGameHost(host))
 	s.Load(host)
 }
 

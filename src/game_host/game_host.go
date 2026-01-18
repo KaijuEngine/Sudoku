@@ -1,9 +1,16 @@
 package game_host
 
+import (
+	"kaiju/engine"
+	"kaiju/engine/ui"
+)
+
 type GameHost struct {
-	// Developer should fill in structure and NewGameHost as needed
+	UiMan ui.Manager
 }
 
-func NewGameHost() *GameHost {
-	return &GameHost{}
+func NewGameHost(host *engine.Host) *GameHost {
+	g := &GameHost{}
+	g.UiMan.Init(host)
+	return g
 }

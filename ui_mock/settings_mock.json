@@ -1,0 +1,6 @@
+{
+    "SFXVolume": 0.25,
+    "MusicVolume": 1.0,
+    "Resolution": "1280 x 720",
+    "Resolutions": ["Full Screen", "1280 x 720", "another"]
+}

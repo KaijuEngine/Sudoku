@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			h1, h2 {
+				width: 100%;
+				text-align: center;
+			}
+			#window {
+				position: absolute;
+				width: 50%;
+				height: 50%;
+				left: 25%;
+				top: 25%;
+				background-color: #471808;
+				color: white;
+				padding: 10px;
+				background-image: url("sudoku/textures/panel_border.png");
+			}
+			.btns {
+				position: absolute;
+				bottom: 0;
+				left: -50%;
+				width: 100%;
+			}
+			.yesBtn, .menuBtn {
+				bottom: 0;
+				font-size: 2em;
+				width: 45%;
+			}
+			.menuBtn {
+				position: absolute;
+				right: 0;
+			}
+			.volumeBar {
+				width: 65%;
+				height: 30px;
+			}
+			.inputArea {
+				margin-bottom: 1em;
+			}
+			.soundLabel {
+				margin-right: 1em;
+			}
+			.musicLabel {
+				margin-right: 1.3em;
+			}
+			.windowResolution {
+				margin-left: 2em;
+				width: 25%;
+				height: 2em;
+			}
+			button {
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 30%;
+				color: white;
+				font-size: 2em;
+				padding: 5px 10px 5px 10px;
+				background-color: #581E0A;
+				background-image: url("d2176f4a-a224-4ae4-afd9-d345cc828535");
+				background-size: revert;
+				background-position: revert;
+			}
+			button:hover {
+				background-color: #76280D;
+				background-image: url("8b886be8-870b-41f9-87ff-beb44ae8fe21");
+				background-size: revert;
+				background-position: revert;
+			}
+			button:active {
+				padding: 10px 10px 0px 10px;
+				background-image: url("72149711-0d8f-4628-a9e5-7ad06826c49f");
+				background-size: revert;
+				background-position: revert;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="window">
+			<h1>Settings</h1>
+			<div class="inputArea">
+				<span class="soundLabel">Sound Volume:</span>
+				<input class="volumeBar" type="slider" value="{{.SFXVolume}}" onchange="changeSFXVolume" onsubmit="submitSFXVolume" />
+				<span id="soundPercent" class="sliderPercent">50%</span>
+			</div>
+			<div class="inputArea">
+				<span class="musicLabel">Music Volume:</span>
+				<input class="volumeBar" type="slider" value="{{.MusicVolume}}" onchange="submitMusicVolume" />
+				<span id="musicPercent" class="sliderPercent">50%</span>
+			</div>
+			<div class="inputArea">
+				<span>Window Resolution:</span>
+				<select class="windowResolution" value="{{.Resolution}}" onsubmit="setWindowResolution">
+					{{range .Resolutions}}
+						<option value="{{.}}">{{.}}</option>
+					{{end}}
+				</select>
+			</div>
+			<button onclick="clickBack">Back</button>
+		</div>
+	</body>
+</html>

@@ -15,7 +15,7 @@ const mainMenuUI = "f3fc7333-3038-449d-a4ce-15535c8047fd"
 const buttonSoundId = "f7625352-2c7a-43d2-ac1a-a6a7d0b18f35"
 
 func init() {
-	engine.RegisterEntityData("main_menu.MenuStartup", MenuStartup{})
+	engine.RegisterEntityData(MenuStartup{})
 }
 
 type MenuStartup struct {

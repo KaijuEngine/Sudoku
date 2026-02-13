@@ -9,6 +9,4 @@ import (	_ "kaiju/engine_entity_data/engine_entity_data_audio"
 	_ "kaiju/engine_entity_data/engine_entity_data_physics"
 	_ "kaiju/engine_entity_data/engine_entity_data_skin_animation"
 	_ "kaiju/engine_entity_data/engine_entity_data_tween_transform"
-	_ "game/game_setup"
-	_ "game/main_menu"
 )

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"game/game_host"
 	"kaiju/bootstrap"
 	"kaiju/build"
@@ -62,24 +61,16 @@ func (Game) Launch(host *engine.Host) {
 		host.Close()
 		return
 	}
-	s := stages.Stage{}
-	if build.Debug && !klib.IsMobile() {
-		j := stages.StageJson{}
-		if err := json.Unmarshal(stageData, &j); err != nil {
-			slog.Error("failed to decode the entry point stage 'main'", "error", err)
-			host.Close()
-			return
-		}
-		s.FromMinimized(j)
-	} else {
-		if s, err = stages.ArchiveDeserializer(stageData); err != nil {
-			slog.Error("failed to deserialize the entry point stage", "stage", startStage, "error", err)
-			host.Close()
-			return
-		}
+	s, err := stages.Deserialize(stageData)
+	if err != nil {
+		slog.Error("failed to deserialize the entry point stage", "stage", startStage, "error", err)
+		host.Close()
+		return
 	}
-	host.SetGame(game_host.NewGameHost(host))
-	s.Load(host)
+	gh := game_host.NewGameHost(host)
+	host.SetGame(gh)
+	loadResult := s.Load(host)
+	gh.MainLoaded(host, loadResult)
 }
 
 func getGame() bootstrap.GameInterface { return Game{} }

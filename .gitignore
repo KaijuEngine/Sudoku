@@ -7,7 +7,7 @@
 *__debug*
 *.exe*
 
-# Test binary, built with `go test -c`
+# Test binary, built with "go test -c"
 *.test
 
 # Code coverage profiles and other test artifacts
@@ -26,6 +26,9 @@ profile.cov
 # Trace files
 heap.prof
 trace.out
+
+# Kaiju editor cache
+database/.edcache
 
 # Kaiju engine code
 #   Feel free to comment this out if you modify the engine code in your project

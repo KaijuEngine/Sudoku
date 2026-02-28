@@ -2,11 +2,12 @@ package game_host
 
 import (
 	"fmt"
-	"kaiju/engine"
-	"kaiju/engine/collision"
-	"kaiju/engine/systems/console"
-	"kaiju/matrix"
 	"log/slog"
+
+	"kaijuengine.com/engine"
+	"kaijuengine.com/engine/collision"
+	"kaijuengine.com/engine/systems/console"
+	"kaijuengine.com/matrix"
 )
 
 const (

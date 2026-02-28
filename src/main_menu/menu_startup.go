@@ -2,13 +2,14 @@ package main_menu
 
 import (
 	"game/game_host"
-	"kaiju/engine"
-	"kaiju/engine/ui/markup"
-	"kaiju/engine/ui/markup/document"
-	"kaiju/platform/audio"
-	"kaiju/platform/profiler/tracing"
 	"log/slog"
 	"weak"
+
+	"kaijuengine.com/engine"
+	"kaijuengine.com/engine/ui/markup"
+	"kaijuengine.com/engine/ui/markup/document"
+	"kaijuengine.com/platform/audio"
+	"kaijuengine.com/platform/profiler/tracing"
 )
 
 const mainMenuUI = "f3fc7333-3038-449d-a4ce-15535c8047fd"

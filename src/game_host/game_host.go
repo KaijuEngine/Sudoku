@@ -1,9 +1,9 @@
 package game_host
 
 import (
-	"kaiju/engine"
-	"kaiju/engine/stages"
-	"kaiju/engine/ui"
+	"kaijuengine.com/engine"
+	"kaijuengine.com/engine/stages"
+	"kaijuengine.com/engine/ui"
 )
 
 type GameHost struct {

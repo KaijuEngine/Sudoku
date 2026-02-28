@@ -2,12 +2,12 @@ package main
 
 import (
 	"game/game_host"
-	"kaiju/bootstrap"
-	"kaiju/build"
-	"kaiju/engine"
-	"kaiju/engine/assets"
-	"kaiju/klib"
-	"kaiju/engine/stages"
+	"kaijuengine.com/bootstrap"
+	"kaijuengine.com/build"
+	"kaijuengine.com/engine"
+	"kaijuengine.com/engine/assets"
+	"kaijuengine.com/klib"
+	"kaijuengine.com/engine/stages"
 	"log/slog"
 	"os"
 	"path/filepath"

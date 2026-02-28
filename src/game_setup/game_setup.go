@@ -2,7 +2,8 @@ package game_setup
 
 import (
 	"game/game_host"
-	"kaiju/engine"
+
+	"kaijuengine.com/engine"
 )
 
 func init() {

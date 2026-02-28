@@ -3,11 +3,12 @@ package main_menu
 import (
 	"fmt"
 	"game/game_host"
-	"kaiju/engine/ui/markup"
-	"kaiju/engine/ui/markup/document"
-	"kaiju/platform/profiler/tracing"
 	"log/slog"
 	"strconv"
+
+	"kaijuengine.com/engine/ui/markup"
+	"kaijuengine.com/engine/ui/markup/document"
+	"kaijuengine.com/platform/profiler/tracing"
 )
 
 const (

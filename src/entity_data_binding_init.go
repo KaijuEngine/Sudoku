@@ -2,12 +2,12 @@
 
 package main
 
-import (	_ "kaiju/engine_entity_data/engine_entity_data_audio"
-	_ "kaiju/engine_entity_data/engine_entity_data_camera"
-	_ "kaiju/engine_entity_data/engine_entity_data_light"
-	_ "kaiju/engine_entity_data/engine_entity_data_particles"
-	_ "kaiju/engine_entity_data/engine_entity_data_physics"
-	_ "kaiju/engine_entity_data/engine_entity_data_skin_animation"
-	_ "kaiju/engine_entity_data/engine_entity_data_tween_transform"
+import (	_ "kaijuengine.com/engine_entity_data/engine_entity_data_audio"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_camera"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_light"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_particles"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_physics"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_skin_animation"
+	_ "kaijuengine.com/engine_entity_data/engine_entity_data_tween_transform"
 	_ "game/main_menu"
 )
